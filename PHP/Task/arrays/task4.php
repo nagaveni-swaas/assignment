@@ -33,12 +33,32 @@ function changeStringsToUpperCase($array)
            
         }
     }
-    return $array_upercase;
+    return $array_upercase; 
 }
 
 $array =array('A' => 'Blue', 'b' => 'Green', 'C' => 'Red');
-// Change strings to uppercase
+// Change strings to lowercase
 $upperArray = changeStringsToUpperCase($array);
 // Print the modified array
 print_r($upperArray);
+function changeStringsToLowerCase($array)
+{
+    $array_lower= array();
+    $array_withkey = array_change_key_case($array, CASE_LOWER);
+    foreach ($array_withkey as $key => $value) {
+        // Check if $value is a string
+        if (is_string($value)) {
+            // Convert $value to lowercase
+            $array_lowercase[$key] = strtolower($value);
+           
+        }
+    }
+    return $array_lowercase; 
+}
+
+$array =array('A' => 'Blue', 'b' => 'Green', 'C' => 'Red');
+// Change strings to lowercase
+$lowerArray = changeStringsToLowerCase($array);
+// Print the modified array
+print_r($lowerArray);
 ?>

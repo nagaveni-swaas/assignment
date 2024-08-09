@@ -1,0 +1,21 @@
+.green{
+
+    background-color: #04AA6D;
+    color: white;
+    margin-right:10px;
+    
+}
+.yellow{
+
+    background-color: rgb(223, 223, 25);
+    color: white;
+    
+}
+.box
+{
+    box-sizing: border-box;
+     width: fit-content;
+    height: fit-content;
+    padding: 30px;  
+    border: 10px solid blue;
+}
