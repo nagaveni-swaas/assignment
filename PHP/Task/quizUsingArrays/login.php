@@ -17,7 +17,7 @@
 <?php
 $userName="swaas";
 $userPassword="swaas@123";
-if(isset($_POST['logclass="green"in'])){
+if(isset($_POST['login'])){
 $name=$_POST['name'];
 $password=$_POST['password'];
     if($name==$userName && $password==$userPassword){
