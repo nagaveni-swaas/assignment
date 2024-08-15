@@ -38,5 +38,5 @@ fwrite($fopen,$write);*/
 $fopen=fopen("test2.txt","x+");
 $write="lkjhjk";
 $fwrite=fwrite($fopen,$write);
-fclose($fwrite);
+fclose($fopen);
 ?>
