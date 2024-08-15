@@ -3,5 +3,5 @@
 $fopen=fopen("test3.txt","a+");
 $write="happy independence day";
 $fwrite=fwrite($fopen,$write);
-fclose($fwrite);
+fclose($fopen);
 ?>
